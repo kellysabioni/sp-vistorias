@@ -1,0 +1,104 @@
+/* geral */
+*, *::after, *::before {
+    box-sizing: border-box; 
+    margin: auto;
+    padding: 0;
+}
+/* Definição variáveis das cores */
+:root {
+    --cor-escura: #333;
+    --cor-intermediaria: #2e2e2e;
+    --cor-clara: #f0f0f0;
+    --cor-vermelho: #F22E2E;
+    --cor-vermelho-intermediario: rgb(248, 97, 97);
+    }
+/* Estilo Geral BODY */
+body{
+    font-family: "Open Sans", "Roboto Flex", "Sans Serif";
+    font-size: 15px;
+    color: var(--cor-intermediaria);
+    padding: 20px;
+    line-height: 1.5;
+}
+ul{list-style-type: none;}
+
+a{text-decoration: none;}
+/* cabeçalho */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    color: white;
+    /* padding: 20px; */
+    transition: all 0.3s ease-in-out;
+}
+h1 .logo {
+    max-width: 60%;
+    display: flex; 
+    align-items: center;
+}
+/* banner */
+.banner {
+    color: var(--cor-vermelho);
+    font-size: 2.2rem;
+    text-align: center;
+    h2{
+        font-weight: 800;
+        color: var(--cor-vermelho);
+        text-shadow: #f0f0f0 2px 1px 3px ;
+        margin-top: 6rem;
+    }
+    p{
+        color: var(--cor-clara);
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 10rem;
+    }
+}
+figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Envia o figure para trás do header */
+    margin: 0;
+    padding: 0;
+   img{
+    height: 60vh;
+    width: 100vw;
+    max-width: 100vw;
+   } 
+}
+/* menu */
+.menu-topo ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    li a{
+        color: var(--cor-vermelho);
+    }
+}
+/* rodapé */
+footer {
+    display: flex;
+    background-color: black;
+    
+    .logo {
+        min-width: 150px;
+        max-width: 25%;
+        display: flex; 
+    }
+}
+
+/* Dados de contato e MAPA */
+/* .dados-contato{
+
+
+} */
+
+iframe{
+    border-radius: 15px;
+    max-height: 45vh;
+    width: 90%;
+    max-width: 90%;
+}
